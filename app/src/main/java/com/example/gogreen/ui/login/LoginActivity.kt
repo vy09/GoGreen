@@ -13,8 +13,10 @@ import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.Toast
 import com.example.gogreen.databinding.ActivityLogin2Binding
+import android.content.Intent
 
 import com.example.gogreen.R
+import com.example.gogreen.ui.register.Register
 
 class LoginActivity : AppCompatActivity() {
 
@@ -27,10 +29,16 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLogin2Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        val btnRegister = binding.btnRegister
         val username = binding.username
         val password = binding.password
         val login = binding.login
         val loading = binding.loading
+
+        btnRegister!!.setOnClickListener {
+            val intent = Intent(this@LoginActivity, Register::class.java)
+            startActivity(intent)
+        }
 
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
@@ -52,7 +60,7 @@ class LoginActivity : AppCompatActivity() {
         loginViewModel.loginResult.observe(this@LoginActivity, Observer {
             val loginResult = it ?: return@Observer
 
-            loading.visibility = View.GONE
+            loading?.visibility = View.GONE
             if (loginResult.error != null) {
                 showLoginFailed(loginResult.error)
             }
@@ -92,7 +100,7 @@ class LoginActivity : AppCompatActivity() {
             }
 
             login.setOnClickListener {
-                loading.visibility = View.VISIBLE
+                loading?.visibility = View.VISIBLE
                 loginViewModel.login(username.text.toString(), password.text.toString())
             }
         }
