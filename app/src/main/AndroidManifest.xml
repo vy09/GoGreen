@@ -13,6 +13,9 @@
         android:theme="@style/Theme.GoGreen"
         tools:targetApi="34">
         <activity
+            android:name=".Edukasi_Activity"
+            android:exported="false" />
+        <activity
             android:name=".ui.register.Register"
             android:exported="false" />
         <activity
