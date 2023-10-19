@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNavigationView.setOnItemSelectedListener {
             when(it.itemId) {
-//                R.id.setor -> replacementFragment(Setor())
+                R.id.setor -> replacementFragment(Setor())
                 R.id.home -> replacementFragment(Home())
                 R.id.edu -> replacementFragment(Edu())
                 R.id.profil -> replacementFragment(Profil())
