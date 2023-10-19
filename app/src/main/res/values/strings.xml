@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name">Go Green</string>
+    <string name="app_name" translatable="false">Go Green</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_sign_in">SignIn_Activity</string>
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="title_activity_sign_in" translatable="false">SignIn_Activity</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
 
-    <string name="lorem_ipsum">
+    <string name="lorem_ipsum" translatable="false">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
         volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
         dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
@@ -45,25 +45,26 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
-    <string name="title_activity_login">Login_Activity</string>
-    <string name="prompt_username">Username</string>
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="sign_up">Registrasi Akun?</string>
-    <string name="confirm_password">Confirm Password</string>
-    <string name="sign_up_regis">Daftar Akun</string>
-    <string name="display_name">Display Name</string>
-    <string name="alamat">Alamat</string>
-    <string name="nomor_telepon">Nomor Telepon</string>
-    <string name="gogreen">GoGreen</string>
-    <string name="sign_in_with_twitter">Sign in with Twitter</string>
-    <string name="sign_in_with_facebook">Sign in with Facebook</string>
-    <string name="sign_in_with_google">Sign in with Google</string>
-    <string name="appicon">AppIcon</string>
+    <string name="title_activity_login" translatable="false">Login_Activity</string>
+    <string name="prompt_username" translatable="false">Username</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in" translatable="false">Sign in or register</string>
+    <string name="action_sign_in_short" translatable="false">Sign in</string>
+    <string name="welcome" translatable="false">Welcome !"</string>
+    <string name="invalid_username" translatable="false">Not a valid username</string>
+    <string name="invalid_password" translatable="false">Password must be >5 characters</string>
+    <string name="login_failed" translatable="false">Login failed"</string>
+    <string name="sign_up" translatable="false">Registrasi Akun?</string>
+    <string name="confirm_password" translatable="false">Confirm Password</string>
+    <string name="sign_up_regis" translatable="false">Daftar Akun</string>
+    <string name="display_name" translatable="false">Display Name</string>
+    <string name="alamat" translatable="false">Alamat</string>
+    <string name="nomor_telepon" translatable="false">Nomor Telepon</string>
+    <string name="gogreen" translatable="false">GoGreen</string>
+    <string name="sign_in_with_twitter" translatable="false">Sign in with Twitter</string>
+    <string name="sign_in_with_facebook" translatable="false">Sign in with Facebook</string>
+    <string name="sign_in_with_google" translatable="false">Sign in with Google</string>
+    <string name="appicon" translatable="false">AppIcon</string>
+    <string name="nama_pengguna" translatable="false">Luna Linglung</string>
 </resources>

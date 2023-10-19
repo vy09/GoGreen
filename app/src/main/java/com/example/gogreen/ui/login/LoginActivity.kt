@@ -14,6 +14,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.example.gogreen.databinding.ActivityLogin2Binding
 import android.content.Intent
+import com.example.gogreen.MainActivity
 
 import com.example.gogreen.R
 import com.example.gogreen.ui.register.Register
@@ -32,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
         val btnRegister = binding.btnRegister
         val username = binding.username
         val password = binding.password
-        val login = binding.login
+        val btnlogin = binding.login
         val loading = binding.loading
 
         btnRegister!!.setOnClickListener {
@@ -47,7 +48,7 @@ class LoginActivity : AppCompatActivity() {
             val loginState = it ?: return@Observer
 
             // disable login button unless both username / password is valid
-            login.isEnabled = loginState.isDataValid
+            btnlogin.isEnabled = loginState.isDataValid
 
             if (loginState.usernameError != null) {
                 username.error = getString(loginState.usernameError)
@@ -98,10 +99,10 @@ class LoginActivity : AppCompatActivity() {
                 }
                 false
             }
-
-            login.setOnClickListener {
-                loading?.visibility = View.VISIBLE
-                loginViewModel.login(username.text.toString(), password.text.toString())
+            // Login Button
+            btnlogin.setOnClickListener {
+                val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                startActivity(intent)
             }
         }
     }
