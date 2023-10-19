@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/baseline_recycling_24"
+        android:id="@+id/setor"
+        android:title="Setor" />
+    <item
+        android:icon="@drawable/baseline_home_24"
+        android:id="@+id/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/edu"
+        android:icon="@drawable/baseline_info_24"
+        android:title="Edu" />
+    <item
+        android:id="@+id/profil"
+        android:icon="@drawable/baseline_person_2_24"
+        android:title="Profil" />
+</menu>
