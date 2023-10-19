@@ -19,10 +19,9 @@ class MainActivity : AppCompatActivity() {
             when(it.itemId) {
 //                R.id.setor -> replacementFragment(Setor())
                 R.id.home -> replacementFragment(Home())
-//                R.id.edu -> replacementFragment(Edu())
+                R.id.edu -> replacementFragment(Edu())
                 R.id.profil -> replacementFragment(Profil())
                 else ->{
-
 
                 }
             }

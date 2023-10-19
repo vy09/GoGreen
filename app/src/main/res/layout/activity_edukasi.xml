@@ -4,126 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient_background"
-    tools:context=".Edukasi_Activity">
+    android:background="@drawable/gradient_background">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="351dp"
-        android:layout_height="67dp"
-        android:text="Halo Sobat !
-                                         Ayo pilah sampah sesuai jenisnya..."
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.229" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout1"
-        android:layout_width="411dp"
-        android:layout_height="144dp"
-        android:background="@color/bg_edu_y"
-        android:padding="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="407dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/edu354"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="286dp"
-            android:layout_height="115dp"
-            android:text="Sampah residu. Jenis sampah residu adalah sampah yang sudah sama sekali tidak bisa didaur ulang dan akan berakhir di Tempat Pembuangan Akhir (TPA). seperti tisu basah, kotak plastik atau kertas bekas makanan, styrofoam, kemasan makanan dan minuman, dan seterusnya."
-            android:textSize="13sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.224"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="203dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="24dp"
+                app:srcCompat="@mipmap/eduk_background" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="351dp"
+                android:layout_height="67dp"
+                android:text="Halo Sobat !
+                                                 Ayo pilah sampah sesuai jenisnya..."
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="411dp"
-        android:layout_height="144dp"
-        android:padding="4dp"
-        tools:layout_editor_absoluteY="263dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout1"
+                android:layout_width="411dp"
+                android:layout_height="144dp"
+                android:background="@color/bg_edu_y"
+                android:padding="4dp">
 
-        <TextView
-            android:id="@+id/edu34"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="286dp"
-            android:layout_height="115dp"
-            android:text="Sampah residu. Jenis sampah residu adalah sampah yang sudah sama sekali tidak bisa didaur ulang dan akan berakhir di Tempat Pembuangan Akhir (TPA). seperti tisu basah, kotak plastik atau kertas bekas makanan, styrofoam, kemasan makanan dan minuman, dan seterusnya."
-            android:textSize="13sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/edu354"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="286dp"
+                    android:layout_height="115dp"
+                    android:text="Sampah residu. Jenis sampah residu adalah sampah yang sudah sama sekali tidak bisa didaur ulang dan akan berakhir di Tempat Pembuangan Akhir (TPA). seperti tisu basah, kotak plastik atau kertas bekas makanan, styrofoam, kemasan makanan dan minuman, dan seterusnya."
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.224"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout3"
-        android:layout_width="411dp"
-        android:layout_height="144dp"
-        android:background="@color/bg_edu_r"
-        android:padding="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="696dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="411dp"
+                android:layout_height="144dp"
+                android:padding="4dp">
 
-        <TextView
-            android:id="@+id/body"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="287dp"
-            android:layout_height="93dp"
-            android:layout_marginEnd="88dp"
-            android:text="Sampah kertas. Sesuai dengan namanya, semua kategori barang terbuat dari kertas masuk ke dalam kelompok sampah jenis ini seperti tas kertas cangkir kertas, karton, koran, buku, brosur, dan lain-lain."
-            android:textSize="13sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/edu34"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="286dp"
+                    android:layout_height="115dp"
+                    android:text="Sampah residu. Jenis sampah residu adalah sampah yang sudah sama sekali tidak bisa didaur ulang dan akan berakhir di Tempat Pembuangan Akhir (TPA). seperti tisu basah, kotak plastik atau kertas bekas makanan, styrofoam, kemasan makanan dan minuman, dan seterusnya."
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.517" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout21"
-        android:layout_width="411dp"
-        android:layout_height="144dp"
-        android:padding="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="552dp">
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <TextView
-            android:id="@+id/edu"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="286dp"
-            android:layout_height="115dp"
-            android:layout_marginEnd="4dp"
-            android:text="Sampah residu. Jenis sampah residu adalah sampah yang sudah sama sekali tidak bisa didaur ulang dan akan berakhir di Tempat Pembuangan Akhir (TPA). seperti tisu basah, kotak plastik atau kertas bekas makanan, styrofoam, kemasan makanan dan minuman, dan seterusnya."
-            android:textSize="13sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="411dp"
+                android:layout_height="144dp"
+                android:background="@color/bg_edu_r"
+                android:padding="4dp">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="203dp"
-        android:layout_height="170dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/eduk_background" />
+                <TextView
+                    android:id="@+id/body"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="287dp"
+                    android:layout_height="93dp"
+                    android:layout_marginEnd="88dp"
+                    android:text="Sampah kertas. Sesuai dengan namanya, semua kategori barang terbuat dari kertas masuk ke dalam kelompok sampah jenis ini seperti tas kertas cangkir kertas, karton, koran, buku, brosur, dan lain-lain."
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout21"
+                android:layout_width="411dp"
+                android:layout_height="144dp"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/edu"
+                    style="@style/TextAppearance.MaterialComponents.Body1"
+                    android:layout_width="286dp"
+                    android:layout_height="115dp"
+                    android:layout_marginEnd="4dp"
+                    android:text="Sampah residu. Jenis sampah residu adalah sampah yang sudah sama sekali tidak bisa didaur ulang dan akan berakhir di Tempat Pembuangan Akhir (TPA). seperti tisu basah, kotak plastik atau kertas bekas makanan, styrofoam, kemasan makanan dan minuman, dan seterusnya."
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
